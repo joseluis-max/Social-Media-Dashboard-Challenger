@@ -2,3 +2,4 @@ scss/
 .DS_Store
 *.md
 design/
+*.config
