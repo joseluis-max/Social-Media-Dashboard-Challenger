@@ -1,13 +1,57 @@
+@media screen and (max-width: 767px) {
+  .header-titulo {
+    font-size: 25px;
+  }
+  .header .redes {
+    margin: 0px auto;
+    max-width: 22rem !important;
+    width: 100%;
+  }
+  .header .envoltorio_dm {
+    justify-content: space-between !important;
+    position: static !important;
+  }
+  .header-linea {
+    border-color: black;
+    visibility: visible !important;
+  }
+
+  .redes {
+    margin: 0px auto auto auto;
+    width: 100% !important;
+    max-width: 22rem !important;
+  }
+
+  .title-overview {
+    margin-left: 10px;
+  }
+
+  .tarjeta-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .tarjeta {
+    width: 100% !important;
+    max-width: 22rem !important;
+    padding: 20px 20px;
+    justify-content: flex-end;
+    margin: 0px auto !important;
+    margin-bottom: 20px !important;
+  }
+}
 .header {
   width: 100%;
   margin: 0px auto;
-  background-color: #f0f2fa;
+  background-color: #f5f7ff;
   border-radius: 0px 0px 20px 20px !important;
   padding: 40px 15px;
   padding-bottom: 60px;
+  position: relative;
 }
 .header-titulo {
-  font-size: 25px;
   font-weight: 700;
 }
 .header-subtitulos {
@@ -16,10 +60,14 @@
 }
 .header-linea {
   border-color: black;
+  visibility: hidden;
 }
 .header .envoltorio_dm {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  position: absolute;
+  top: 25%;
+  right: 13%;
 }
 .header-interruptor-mode {
   background-color: #63687e;
@@ -38,21 +86,27 @@
 }
 
 .cartas {
-  margin-top: -60px;
+  margin-top: -50px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .redes {
   background-color: #f0f2fa;
   border: none;
   border-radius: 9px;
-  width: 90%;
-  max-width: 15rem;
-  margin: 0px auto;
+  width: 100%;
+  max-width: 16rem;
   margin-bottom: 20px;
+}
+.redes:hover {
+  background-color: #d5d9e7;
+}
+
+p {
+  margin: 0px;
 }
 
 img {
@@ -63,14 +117,16 @@ img {
   font-weight: 700;
   font-size: 70px;
   margin: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .letras_claras {
   font-weight: 500;
   color: gray;
+  margin-bottom: 20px;
   letter-spacing: 5px;
   margin-top: -20px;
-  margin-bottom: 20px;
 }
 
 .icono {
@@ -96,4 +152,107 @@ img {
 
 .youtube {
   border-top: 5px solid #c4032a;
+}
+
+.title-overview {
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.tarjeta-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.tarjeta-container .tarjeta {
+  background-color: #f0f2fa;
+  border: none;
+  width: 90%;
+  max-width: 15rem;
+  padding: 20px 20px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.tarjeta-container .tarjeta:hover {
+  background-color: #d5d9e7;
+}
+
+.porcentaje {
+  color: #1db489;
+  font-weight: 600;
+}
+
+.porcentaje_2 {
+  color: #c4032a;
+  font-weight: 600;
+}
+
+.size {
+  width: 20px;
+  height: 20px;
+}
+
+.medio_oscuras {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.letras_pequennas {
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.drog {
+  margin-left: auto !important;
+}
+
+.background {
+  background: #378fe6;
+  background: linear-gradient(45deg, #378fe6 28%, #3eda82 61%);
+}
+
+.darkmode {
+  background-color: #1e202a;
+}
+
+.headerDark {
+  background-color: #1f212e;
+}
+.headerDark h1 {
+  color: white;
+}
+
+.redesDark {
+  background-color: #252a41 !important;
+  border: none;
+  border-radius: 9px;
+  width: 100%;
+  max-width: 16rem;
+  margin-bottom: 20px;
+  color: white !important;
+}
+.redesDark:hover {
+  background-color: #353d5e !important;
+}
+
+.tarjetasDark {
+  background-color: #252a41 !important;
+  border: none;
+  width: 90%;
+  max-width: 15rem;
+  padding: 20px 20px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  color: white;
+}
+.tarjetasDark:hover {
+  background-color: #353d5e !important;
+}
+
+.letter_white {
+  color: white;
 }
