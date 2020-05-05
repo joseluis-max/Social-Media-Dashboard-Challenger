@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   .header-titulo {
-    font-size: 25px;
+    font-size: 2rem;
   }
   .header .redes {
     margin: 0px auto;
@@ -23,7 +23,7 @@
   }
 
   .title-overview {
-    margin-left: 10px;
+    margin-left: 1rem;
   }
 
   .tarjeta-container {
@@ -42,6 +42,11 @@
     margin-bottom: 20px !important;
   }
 }
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
 .header {
   width: 100%;
   margin: 0px auto;
@@ -85,7 +90,7 @@
   margin: 3px 3px;
 }
 
-.cartas {
+.envoltorio_redes {
   margin-top: -50px;
   width: 100%;
   display: flex;
@@ -100,17 +105,14 @@
   width: 100%;
   max-width: 16rem;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .redes:hover {
   background-color: #d5d9e7;
 }
-
-p {
-  margin: 0px;
-}
-
-img {
-  vertical-align: top;
+.redes:Before {
+  content: "";
+  height: 5px;
 }
 
 .letras_oscuras {
@@ -138,20 +140,21 @@ img {
   font-weight: 700;
 }
 
-.facebook {
-  border-top: 5px solid deepskyblue;
+.facebook:Before {
+  background-color: deepskyblue;
 }
 
-.twitter {
-  border-top: 5px solid #1ca0f2;
+.twitter:Before {
+  background-color: #1ca0f2;
 }
 
-.instagram {
-  border-top: 5px solid rgba(255, 51, 0, 0.678);
+.instagram:Before {
+  background: #fcb468;
+  background: linear-gradient(45deg, #fcb468 28%, #df4996 61%);
 }
 
-.youtube {
-  border-top: 5px solid #c4032a;
+.youtube:Before {
+  background-color: #c4032a;
 }
 
 .title-overview {
